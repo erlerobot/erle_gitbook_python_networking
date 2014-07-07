@@ -34,3 +34,38 @@ If you run client again on the same machine, but this
 time use the external IP address of the box, even though the client and server are both running there, this will not give any error.So binding to an IP interface might limit which external hosts can talk to you; but it will certainly not
 limit conversations with other clients on the same machine, so long as they know the IP address that
 they should use to connect.
+
+Now, stop all of the scripts that are
+running, and we can try running two servers on the same box.
+```
+root@erlerobot:~/Python_files# python socket1.py server 127.0.0.1
+Listening at ('127.0.0.1', 1060)
+```
+And then we try running a second one, connected to the wildcard IP address that allows requests
+from any address:
+```
+root@erlerobot:~/Python_files# python socket1.py server
+Traceback (most recent call last):
+...
+socket.error: [Errno 98] Address already in use
+```
+We have learned something about operating system IP stacks and the
+rules that they follow: they do not allow two different sockets to listen at the same IP address and port
+number, because then the operating system would not know where to deliver incoming packets.
+But what if instead of trying to run the second server against all IP interfaces, we just ran it against
+an external IP interface—one that the first copy of the server is not listening to? Let us try:
+
+```
+root@erlerobot:~/Python_files# python socket1.py server 192.168.1.35
+Listening at ('192.168.1.35', 1060)
+```
+
+It worked, this menas that there are now two servers running on this machine, one of which is bound to the inwardlooking
+port 1060 on the loopback interface, and the other looking outward for packets arriving on port
+1060 from the network to which my wireless card has connected.
+
+IP network stack never thinks of a UDP port as a lone entity that is
+either entirely available, or else in use, at any given moment. Instead, it thinks in terms of UDP “socket
+names” that are always a pair linking an IP interface—even if it is the wildcard interface—with a UDP
+port number. It is these socket names that must not conflict among the listening servers at any given
+moment, rather than the bare UDP ports that are in use.

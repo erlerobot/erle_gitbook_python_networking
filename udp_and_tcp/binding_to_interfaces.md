@@ -1,6 +1,11 @@
 ##  Binding to Interfaces
 
-So far we have seen two possibilities for the IP address used in the bind() call that the server makes: you
+When using sockets, it is important to distinguish the act of “binding”—by which you grab a
+particular UDP port for the use of a particular socket—from the act that the client performs by
+“connecting,” which limits all replies received so that they can come only from the particular server to
+which you want to talk.
+
+So far we have seen two possibilities for the IP address used in the `bind()` call that the server makes: you
 can use '127.0.0.1' to indicate that you only want packets from other programs running on the same
 machine, or use an empty string '' as a wildcard, indicating that you are willing to receive packets from
 any interface.

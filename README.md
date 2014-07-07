@@ -30,7 +30,7 @@ Our small-size Linux computer is bringing robotics to the people and businesses.
 ##License
 This book has been based on diferent Linux documentation avaliable on the internet. Refer to the sources for the corresponding licenses:
 
-- [Python Documentation](https://docs.python.org/2/library/). All Python releases are Open Source (see [link](http://opensource.org/) for the Open Source Definition).
+- [Python Library](https://docs.python.org/2/library/)- [Phyton Documentation](https://docs.python.org/2/contents.html). All Python releases are Open Source (see [link](http://opensource.org/) for the Open Source Definition).
 - *Foundations of Python Network Programming* by Brandon Rhodes and John Goerzen
 
 Unless specified, this content is licensed under the Creative Commons Attribution-NonComercial-Share Alike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.

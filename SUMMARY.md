@@ -10,4 +10,6 @@
        * [How it works?](udp_and_tcp/how_it_works.md)
        * [Socket](udp_and_tcp/socket.md)
        * [Unreliability, Backoff, Blocking, Timeouts](udp_and_tcp/unreliability,_backoff,_blocking,_timeouts.md)
+       * [Connecting UDP Sockets](udp_and_tcp/connecting_udp_sockets.md)
+       * [ Binding to Interfaces](udp_and_tcp/binding_to_interfaces.md)
 

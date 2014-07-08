@@ -7,7 +7,7 @@
 * [UDP and TCP](udp_and_tcp/README.md)
    * [Addresses and port numbers](udp_and_tcp/addresses_and_port_numbers.md)
    * [UDP](udp_and_tcp/udp.md)
-       * [How it works?](udp_and_tcp/how_it_works.md)
+       * [How UDP works?](udp_and_tcp/how_it_works.md)
        * [When to use UPD](udp_and_tcp/when_using_upd.md)
        * [Socket](udp_and_tcp/socket.md)
        * [Unreliability, Backoff, Blocking, Timeouts](udp_and_tcp/unreliability,_backoff,_blocking,_timeouts.md)
@@ -15,4 +15,6 @@
        * [ Binding to Interfaces](udp_and_tcp/binding_to_interfaces.md)
        * [UDP Fragmentation](udp_and_tcp/udp_fragmentation.md)
        * [Socket Options](udp_and_tcp/socket_options.md)
+   * [TCP](udp_and_tcp/tcp.md)
+       * [How TCP works?](udp_and_tcp/how_tcp_works.md)
 

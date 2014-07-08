@@ -29,7 +29,7 @@ actual MTU between two hosts, then some operating systems let you turn off
 fragmentation and receive an error if a UDP packet is too big. This lets you
 regroup and split it into several packets if that is possible.
 
-Linux is one operating system that supports this last option. Take a look at `packets.py` , which sends
+Linux is one operating system that supports this last option. Take a look at `big_sender.py` , which sends
 a very large message to one of the servers that we have just designed.
 
 ```python
@@ -56,7 +56,7 @@ else:
 wireless network allows physical packets that are no bigger than the 1,500 bytes typically supported by
 Ethernet-style networks:
 ```
-root@erlerobot:~/Python_files#  python packets.py 127.0.0.0
+root@erlerobot:~/Python_files#  python big_sender.py 127.0.0.0
 The message did not make it
 MTU: 1500
-``
+```

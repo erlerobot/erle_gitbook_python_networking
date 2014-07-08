@@ -9,7 +9,9 @@ So, Python exposes the normal POSIX calls for raw UDP and TCP connections rather
 invent any of its own. And the normal POSIX networking calls operate around a central concept called a
 socket.
 
-If you have ever worked with POSIX before, you will probably have run across the fact that instead of
+Communication between different entities on a network is based on the classic concept Python sockets. Sockets are an abstract concept that designates the end point of a connection. The programs use sockets to communicate with other programs, which may be located on different computers. A socket is defined by the IP address of the machine, the port on which it listens, and the protocol used.
+
+Moreover, if you have ever worked with POSIX before, you will probably have run across the fact that instead of
 making you repeat a file name over and over again, the calls let you use the file name to create a “file
 descriptor” that represents a connection to the file, and through which you can access the file until you
 are done working with it.
@@ -57,17 +59,17 @@ else:
 ```
 When runing it, you should get something similar to this:
 ```
-root@erlerobot:~/Python_files# python socket.py
+root@erlerobot:~/Python_files# python udp_local.py
 usage: udp_local.py server|client
 ```
 Noe try to run first the server:
 ```
-root@erlerobot:~/Python_files# python socket.py server
+root@erlerobot:~/Python_files# python ude_local.py server
 Listening at ('127.0.0.1', 1060)
 ```
 And then in a new Terminal window the client:
 ```
-root@erlerobot:~/Python_files# python socket.py client
+root@erlerobot:~/Python_files# python udp_local.py client
 Address before sending: ('0.0.0.0', 0)
 Address after sending ('0.0.0.0', 59726)
 The server ('127.0.0.1', 1060) says 'Your data was 18 bytes'

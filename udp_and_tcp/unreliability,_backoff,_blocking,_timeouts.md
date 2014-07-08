@@ -61,12 +61,12 @@ else:
  ```
  Then run the server:
 ```
-root@erlerobot:~/Python_files# python socket1.py server
+root@erlerobot:~/Python_files# python udp_remote.py server
 Listening at ('0.0.0.0', 1060)
 ```
 And now the client, remember to pass the hostname where the server script is being run(in this case the same machine):
 ```
-root@erlerobot:~/Python_files# python socket1.py client 127.0.0.1
+root@erlerobot:~/Python_files# python udep_remote.py client 127.0.0.1
 Client socket name is ('127.0.0.1', 54770)
 Waiting up to 0.1 seconds for a reply
 Waiting up to 0.2 seconds for a reply
@@ -76,7 +76,7 @@ The server says 'Your data was 23 bytes'
 ```
 
 
-  As you can see, each time a request is received, the server uses randint() to flip a coin to decide
+  As you can see, each time a request is received, the server uses `randint()` to flip a coin to decide
 whether this request will be answered, so that we do not have to keep running the client all day waiting
 for a real dropped packet.
 The cliente will find that one or more of its requests never result in replies.

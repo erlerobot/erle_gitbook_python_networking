@@ -6,12 +6,12 @@ explicit UDP address every time we want to send something to the server, the `co
 operating system know ahead of time which remote address to which we want to send packets, so that
 we can simply supply data to the `send()` call and not have to repeat the server address again.
 But `connect()` does something else important, which will not be obvious at all from reading the script of
-`socket1.py`.
-To approach this topic, let us return to `socket.py`file for a moment. You will recall that both its client
+`udp_remote.py`.
+To approach this topic, let us return to `udp_local.py`file for a moment. You will recall that both its client
 and server use the loopback IP address and assume reliable delivery—the client will wait forever for a
 response. Try running the client in one window:
 ```
-root@erlerobot:~/Python_files# python socket.py
+root@erlerobot:~/Python_files# python udp_local.py
 Address before sending: ('0.0.0.0', 0)
 Address after sending ('0.0.0.0', 52970)
 ```
@@ -22,9 +22,9 @@ From another command prompt on the same system, try running Python and entering 
 commands—and for the port number, copy the integer that was just printed to the screen when you ran
 the UDP client:
 ```python
->>> import socket
->>> s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
->>> s.sendto('Fake reply',('127.0.0.1',52970))
+import socket
+s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.sendto('Fake reply',('127.0.0.1',52970))
 10
 >>>
 

@@ -1,4 +1,4 @@
-##  Binding to Interfaces
+##  Binding to Interfaces(UDP)
 
 When using sockets, it is important to distinguish the act of “binding”—by which you grab a
 particular UDP port for the use of a particular socket—from the act that the client performs by
@@ -15,12 +15,12 @@ only for packets destined for those IPs.
 First, what if we bind solely to an external interface? Run the server like this, using whatever your
 operating system tells you is the external IP address of your system:
 ```
-root@erlerobot:~/Python_files#  python socket1.py server 192.168.1.35
+root@erlerobot:~/Python_files#  python udp_remote.py server 192.168.1.35
 Listening at ('192.168.1.35', 1060)
 ```
 Connecting to this IP address from another machine should still work just fine:
 ```
-root@erlerobot:~/Python_files# python nn.py client 192.168.1.35
+root@erlerobot:~/Python_files# python udp_remote.py client 192.168.1.35
 Client socket name is ('192.168.1.35', 58824)
 Waiting up to 0.1 seconds for a reply
 The server says 'Your data was 23 bytes'
@@ -28,7 +28,7 @@ The server says 'Your data was 23 bytes'
 But if you try connecting to the service through the loopback interface by running the client script
 on the same machine, the packets will never be delivered:
 ```
-root@erlerobot:~/Python_files# python socket1.py client 127.0.0.1
+root@erlerobot:~/Python_files# python udp_remote.py client 127.0.0.1
 Client socket name is ('127.0.0.1', 60251)
 Waiting up to 0.1 seconds for a reply
 Traceback (most recent call last):
@@ -43,13 +43,13 @@ they should use to connect.
 Now, stop all of the scripts that are
 running, and we can try running two servers on the same box.
 ```
-root@erlerobot:~/Python_files# python socket1.py server 127.0.0.1
+root@erlerobot:~/Python_files# python udp_remote.py server 127.0.0.1
 Listening at ('127.0.0.1', 1060)
 ```
 And then we try running a second one, connected to the wildcard IP address that allows requests
 from any address:
 ```
-root@erlerobot:~/Python_files# python socket1.py server
+root@erlerobot:~/Python_files# python udp_remote.py server
 Traceback (most recent call last):
 ...
 socket.error: [Errno 98] Address already in use
@@ -61,7 +61,7 @@ But what if instead of trying to run the second server against all IP interfaces
 an external IP interface—one that the first copy of the server is not listening to? Let us try:
 
 ```
-root@erlerobot:~/Python_files# python socket1.py server 192.168.1.35
+root@erlerobot:~/Python_files# python udp_remote.py server 192.168.1.35
 Listening at ('192.168.1.35', 1060)
 ```
 

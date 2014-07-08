@@ -25,4 +25,4 @@ NOTE:
 If UDP has a superpower, it is its ability to support **broadcast**: instead of sending a packet to some
 specific other host, you can point it at an entire subnet to which your machine is attached and have the
 physical network card broadcast the packet so that all attached hosts see it without its having to be
-copied separately to each one of them.[Here](http://svn.python.org/projects/python/branches/pep-0384/Demo/sockets/broadcast.py) you can find an example of broadcasting.
+copied separately to each one of them.[Here](http://svn.python.org/projects/python/branches/pep-0384/Demo/sockets/broadcast.py) and [here](https://github.com/misheska/foundations-of-python-network-programming/blob/master/python2/02/udp_broadcast.py) you can find two example of broadcasting.

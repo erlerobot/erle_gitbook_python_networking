@@ -38,3 +38,4 @@ The python binary inside the virtualenv will now have the googlemaps package ava
 ```
 
 When you install a packet, you should be carefull: it must be suitable for Erle architecture.
+

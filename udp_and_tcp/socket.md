@@ -19,10 +19,18 @@ Sockets provide the same idea for the networking realm: when you ask for access 
 communication—like a UDP port, as we are about to see—you create one of these abstract “socket”
 objects and then ask for it to be bound to the port you want to use. If the binding is successful, then the socket “holds on to” that port number for.
 
+From Python documentation we can extract the following:
+```
+socket.socket([family[, type[, proto]]])
+```
+Create a new socket using the given address family, socket type and protocol number. The address family should be AF_INET (the default), AF_INET6 or AF_UNIX. The socket type should be SOCK_STREAM (the default), SOCK_DGRAM or perhaps one of the other SOCK_ constants. The protocol number is usually zero and may be omitted in that case.
+
+
+
 When you craft programs that accept port numbers from user input like the command line or
 configuration files, it is friendly to allow not just numeric port numbers but to let users type humanreadable
 names for well-known ports. These names are standard, and are available through the
-getservbyname() call supported by Python’s standard socket module. If we want to ask where the
+`getservbyname()` call supported by Python’s standard socket module. If we want to ask where the
 Domain Name Service lives, we could have found out this way:
 
 ```python
@@ -84,4 +92,4 @@ Once the socker has been bound successfully, the server is ready to start receiv
 a loop and repeatedly runs `recvfrom()`, telling the routine that it will happily receive messages up to a
 maximum length of MAX, which is equal to 65535 bytes—a value that happens to be the greatest length
 that a UDP packet can possibly have, so that we will always be shown the full content of each packet.
-Until we send a message with a client, our `recvfrom() call will wait forever.
+Until we send a message with a client, our `recvfrom()` call will wait forever.

@@ -13,6 +13,8 @@ interface but the service you are connecting to is supporting only IPv4, the AI_
 those IPv4 addresses re-encoded as IPv6 addresses that you can actually use.
 So you will usually use `getaddrinfo()` this way when connecting:
 ```python
+>>> import socket
+>>> from socket import getaddrinfo
 >>> getaddrinfo('ftp.kernel.org', 'ftp', 0, socket.SOCK_STREAM, 0, socket.AI_ADDRCONFIG | socket.AI_V4MAPPED)
 [(2, 1, 6, '', ('199.204.44.194', 21)), (2, 1, 6, '', ('198.145.20.140', 21)), (2, 1, 6, '', ('149.20.4.69', 21))]
 >>>

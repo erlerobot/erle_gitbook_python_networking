@@ -27,4 +27,10 @@
 * [Socket names and DNS](socket_names_and_dns/README.md)
    * [Socket names](socket_names_and_dns/socket_names.md)
    * [Five socket cordinates](socket_names_and_dns/five_socket_cordinates.md)
+   * [IPv6](socket_names_and_dns/ipv6.md)
+   * [The getaddrinfo() function](socket_names_and_dns/the_getaddrinfo_function.md)
+       * [Asking getaddrinfo() Where to Bind](socket_names_and_dns/asking_getaddrinfo_where_to_bind.md)
+       * [Asking getaddrinfo() About Services](socket_names_and_dns/asking_getaddrinfo_about_services.md)
+       * [Asking getaddrinfo() for Pretty Hostnames](socket_names_and_dns/asking_getaddrinfo_for_pretty_hostnames.md)
+       * [Other getaddrinfo() Flags](socket_names_and_dns/other_getaddrinfo_flags.md)
 

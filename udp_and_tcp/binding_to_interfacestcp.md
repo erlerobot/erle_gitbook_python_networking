@@ -36,6 +36,6 @@ Socket connects ('192.168.1.35', 1060) and ('192.168.1.35', 49696)
 The incoming sixteen-octet message says 'Hi there, server'
 Reply sent, socket closed
 Listening at ('0.0.0.0', 1060)
-``
+```
 
 

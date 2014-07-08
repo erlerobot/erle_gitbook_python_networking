@@ -22,9 +22,9 @@ From another command prompt on the same system, try running Python and entering 
 commands—and for the port number, copy the integer that was just printed to the screen when you ran
 the UDP client:
 ```python
-import socket
-s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.sendto('Fake reply',('127.0.0.1',52970))
+>>> import socket
+>>> s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+>>> s.sendto('Fake reply',('127.0.0.1',52970))
 10
 >>>
 

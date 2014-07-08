@@ -9,12 +9,12 @@ want to pass it into code like that of the many Python modules such as pickle, j
 read and write data directly from a file. For this purpose, Python provides a makefile() method on every
 socket that returns a Python file object that is really calling recv() and send() behind the scenes:
 ```python
-import socket
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-hasattr(s, 'read')
+>>> import socket
+>>> s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+>>> hasattr(s, 'read')
 False
-f = s.makefile()
-hasattr(f, 'read')
+>>> f = s.makefile()
+>>> hasattr(f, 'read')
 True
 ```
 Sockets, like normal Python files, also have a `fileno()` method that lets you discover their file

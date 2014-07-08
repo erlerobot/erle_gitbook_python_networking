@@ -33,4 +33,5 @@
        * [Asking getaddrinfo() About Services](socket_names_and_dns/asking_getaddrinfo_about_services.md)
        * [Asking getaddrinfo() for Pretty Hostnames](socket_names_and_dns/asking_getaddrinfo_for_pretty_hostnames.md)
        * [Other getaddrinfo() Flags](socket_names_and_dns/other_getaddrinfo_flags.md)
+       * [getaddrinfo() in your own code](socket_names_and_dns/getaddrinfo_in_your_own_code.md)
 

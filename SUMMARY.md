@@ -24,4 +24,7 @@
        * [Deadlock](udp_and_tcp/deadlock.md)
        * [Closed Connections, Half-Open Connections](udp_and_tcp/closed_connections,_half-open_connections.md)
        * [Using TCP Streams like Files](udp_and_tcp/using_tcp_streams_like_files.md)
+* [Socket names and DNS](socket_names_and_dns/README.md)
+   * [Socket names](socket_names_and_dns/socket_names.md)
+   * [Five socket cordinates](socket_names_and_dns/five_socket_cordinates.md)
 

@@ -50,4 +50,9 @@
    * [TLS Encrypts Your Conversations](tls_and_ssl/tls_encrypts_your_conversations.md)
    * [Supporting TLS in Python](tls_and_ssl/supporting_tls_in_python.md)
    * [The Standard SSL Module](tls_and_ssl/the_standard_ssl_module.md)
+* [Server Architecture](server_architecture/README.md)
+   * [Daemons and Logging ](server_architecture/daemons_and_logging.md)
+   * [Introductory example](server_architecture/introductory_example.md)
+   * [Elementary client](server_architecture/elementary_client.md)
+   * [Running a Benchmark](server_architecture/running_a_benchmark.md)
 

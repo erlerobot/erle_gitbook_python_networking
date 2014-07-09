@@ -36,4 +36,13 @@
        * [getaddrinfo() in your own code](socket_names_and_dns/getaddrinfo_in_your_own_code.md)
    * [A Sketch of How DNS Works](socket_names_and_dns/a_sketch_of_how_dns_works.md)
    * [Using DNS](socket_names_and_dns/using_dns.md)
+* [Network Data and Network Errors](network_data_and_network_errors/README.md)
+   * [Text and Encodings](network_data_and_network_errors/text_and_encodings.md)
+   * [Network Byte Order ](network_data_and_network_errors/network_byte_order_if_all_you_ever_want_to_send_across_the_network.md)
+   * [Framing and Quoting](network_data_and_network_errors/framing_and_quoting.md)
+   * [Pickles and Self-Delimiting Formats](network_data_and_network_errors/pickles_and_self-delimiting_formats.md)
+   * [XML, JSON, Etc.](network_data_and_network_errors/xml,_json,_etc.md)
+   * [Compression](network_data_and_network_errors/compression.md)
+   * [Network Exceptions](network_data_and_network_errors/network_exceptions.md)
+   * [Handling Exceptions](network_data_and_network_errors/handling_exceptions.md)
 

@@ -42,5 +42,4 @@ passed through untouched:
 ...
 >>> urlparse.urljoin('http://www.python.org/psf/', 'http://yelp.com/')
 'http://yelp.com/'
-````
-
+```

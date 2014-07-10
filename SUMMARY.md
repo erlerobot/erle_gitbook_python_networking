@@ -74,4 +74,7 @@
 * [HTTP](http/README.md)
    * [URL Anatomy](http/url_anatomy.md)
    * [Relative URLs](http/relative_urls.md)
+   * [Instrumenting urllib2](http/instrumenting_urllib2.md)
+   * [The GET Method and The Host Header](http/the_get_method.md)
+   * [Payloads and Persistent Connections](http/payloads_and_persistent_connections.md)
 

@@ -71,4 +71,7 @@
    * [Message Queues](caches,_message_queues,_and_map-reduce/message_queues.md)
    * [Using Message Queues from Python](caches,_message_queues,_and_map-reduce/using_message_queues_from_python.md)
    * [Map-Reduce](caches,_message_queues,_and_map-reduce/map-reduce.md)
+* [HTTP](http/README.md)
+   * [URL Anatomy](http/url_anatomy.md)
+   * [Relative URLs](http/relative_urls.md)
 

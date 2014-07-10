@@ -67,4 +67,8 @@
    * [Threading and Multi-processing Frameworks](server_architecture/threading_and_multi-processing_frameworks.md)
 * [Caches, Message Queues, and Map-Reduce](caches,_message_queues,_and_map-reduce/README.md)
    * [Using Memcached](caches,_message_queues,_and_map-reduce/using_memcached.md)
+   * [Memcached and Sharding](caches,_message_queues,_and_map-reduce/memcached_and_sharding.md)
+   * [Message Queues](caches,_message_queues,_and_map-reduce/message_queues.md)
+   * [Using Message Queues from Python](caches,_message_queues,_and_map-reduce/using_message_queues_from_python.md)
+   * [Map-Reduce](caches,_message_queues,_and_map-reduce/map-reduce.md)
 

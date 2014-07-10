@@ -3,6 +3,9 @@
 Memcached is the “memory cache daemon.” Its impact on many large Internet services has been, by all
 accounts, revolutionary. After glancing at how to use it from Python, we will discuss its implementation,
 which will teach us about a very important modern network concept called sharding.
+
+![memcache](./memcache1.png)
+
 The actual procedures for using Memcached are designed to be very simple:
 - You run a Memcached daemon on every server with some spare memory.
 - You make a list of the IP address and port numbers of your new Memcached
@@ -12,6 +15,8 @@ cache that acts something like a big Python dictionary that all of your servers
 can share. The cache operates on an LRU (least-recently-used) basis, dropping old
 items that have not been accessed for a while so that it has room to both accept
 new entries and keep records that are being frequently accessed.
+
+![How_memcache](./memcache2.jpeg)
 
 Enough Python clients are currently listed for Memcached that I had better just send you to the page
 that lists them, rather than try to review them here: http://code.google.com/p/memcached/wiki/Clients.
@@ -25,7 +30,7 @@ The interface is straightforward. Though you might have expected an interface th
 resembles a Python dictionary with native methods like `__getitem__`, the author of python-memcached
 chose instead to use the same method names as are used in other languages supported by
 Memcached—which I think was a good decision, since it makes it easier to translate Memcached
-examples into Python:
+examples into Python :
 ```python
 >>> import memcache
 >>> mc = memcache.Client(['127.0.0.1:11211'])

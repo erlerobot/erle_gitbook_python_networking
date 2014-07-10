@@ -1,30 +1,6 @@
-## Socket
+## Socket (UDP)
 
-Rather than trying to invent its own API for doing networking, Python made an interesting decision:
-it simply provides a slightly object-based interface to all of the normal, gritty, low-level operating system
-calls that are normally used to accomplish networking tasks on POSIX-compliant operating systems.
-
-
-So, Python exposes the normal POSIX calls for raw UDP and TCP connections rather than trying to
-invent any of its own. And the normal POSIX networking calls operate around a central concept called a
-socket.
-
-Communication between different entities on a network is based on the classic concept Python sockets. Sockets are an abstract concept that designates the end point of a connection. The programs use sockets to communicate with other programs, which may be located on different computers. A socket is defined by the IP address of the machine, the port on which it listens, and the protocol used.
-
-Moreover, if you have ever worked with POSIX before, you will probably have run across the fact that instead of
-making you repeat a file name over and over again, the calls let you use the file name to create a “file
-descriptor” that represents a connection to the file, and through which you can access the file until you
-are done working with it.
-Sockets provide the same idea for the networking realm: when you ask for access to a line of
-communication—like a UDP port, as we are about to see—you create one of these abstract “socket”
-objects and then ask for it to be bound to the port you want to use. If the binding is successful, then the socket “holds on to” that port number for.
-
-From Python documentation we can extract the following:
-```
-socket.socket([family[, type[, proto]]])
-```
-Create a new socket using the given address family, socket type and protocol number. The address family should be AF_INET (the default), AF_INET6 or AF_UNIX. The socket type should be SOCK_STREAM (the default), SOCK_DGRAM or perhaps one of the other SOCK_ constants. The protocol number is usually zero and may be omitted in that case.
-
+As we have seen sockets makes talking to arbitrary machines around the world unbelievably easy (at least compared to other schemes).
 
 
 When you craft programs that accept port numbers from user input like the command line or

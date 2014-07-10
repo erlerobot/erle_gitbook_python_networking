@@ -54,4 +54,5 @@
    * [Daemons and Logging ](server_architecture/daemons_and_logging.md)
    * [Introductory example](server_architecture/introductory_example.md)
    * [Elementary client](server_architecture/elementary_client.md)
+   * [Event-Driven Servers](server_architecture/event-driven_servers.md)
 

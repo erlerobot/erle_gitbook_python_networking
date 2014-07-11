@@ -108,3 +108,28 @@ URLs:
 >>> p.geturl()
 'https://example.com/data?report=sales&company=Nord%2FLB'
 ```
+
+For last, the HTTP request look like this:
+```
+GET /rfc/rfc2616.txt HTTP/1.1
+Accept-Encoding: identity
+Host: www.ietf.org
+Connection: close
+User-Agent: Python-urllib/2.7
+```
+And the HTTP response that comes back over the socket also starts with a set of headers, but then
+also includes a body that contains the document itself that has been requested :
+```
+HTTP/1.1 200 OK
+Server: cloudflare-nginx
+Date: Fri, 11 Jul 2014 07:02:55 GMT
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: __cfduid=d5be98ff9fbae526f308d478da5bb413e1405062173934; expires=Mon, 23-Dec-2019 23:50:00 GMT; path=/; domain=.ietf.org; HttpOnly
+Last-Modified: Fri, 11 Jun 1999 18:46:53 GMT
+Vary: Accept-Encoding
+CF-RAY: 1483235b13c51043-CDG
+<addinfourl at 4341048456 whose fp = <socket._fileobject object at 0x102a13750>>
+
+```

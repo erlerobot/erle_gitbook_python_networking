@@ -82,4 +82,11 @@
    * [Identifying User Agents and Web Servers](http/identifying_user_agents_and_web_servers.md)
    * [Content Type Negotiation](http/content_type_negotiation.md)
    * [Compression](http/compression.md)
+   * [HTTP Caching](http/http_caching.md)
+   * [The HEAD Method](http/the_head_method.md)
+   * [HTTPS Encryption](http/https_encryption.md)
+   * [HTTP Authentication](http/http_authentication.md)
+   * [Cookies](http/cookies.md)
+   * [HTTP Session Hijacking](http/http_session_hijacking.md)
+   * [Cross-Site Scripting Attacks](http/cross-site_scripting_attacks.md)
 

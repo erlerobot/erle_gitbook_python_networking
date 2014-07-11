@@ -97,4 +97,7 @@
    * [Three Axes](screen_scraping/three_axes.md)
    * [Diving into an HTML Document](screen_scraping/diving_into_an_html_document.md)
    * [Selectors](screen_scraping/selectors.md)
+* [Web Applications](web_applications/README.md)
+   * [Web Servers and Python](web_applications/web_servers_and_python.md)
+   * [Choosing a Web Server](web_applications/choosing_a_web_server.md)
 

@@ -22,8 +22,12 @@ There are a collection of techniques that are important for avoiding cross-site 
 them in any good reference on web development. The most important ones include the following:
 - When processing a form that is supposed to submit a POST request, always
 carefully disregard any GET parameters.
+
+
 - Never support URLs that produce some side effect or perform some action simply
 through being the subject of a GET.
+
+
 - In every form, include not only the obvious information—such as a dollar amount
 and destination account number for bank transfers—but also a hidden field with a
 secret value that must match for the submission to be valid. That way, random

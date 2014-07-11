@@ -77,4 +77,9 @@
    * [Instrumenting urllib2](http/instrumenting_urllib2.md)
    * [The GET Method and The Host Header](http/the_get_method.md)
    * [Payloads and Persistent Connections](http/payloads_and_persistent_connections.md)
+   * [POST And Forms](http/post_and_forms.md)
+   * [REST And More HTTP Methods](http/rest_and_more_http_methods.md)
+   * [Identifying User Agents and Web Servers](http/identifying_user_agents_and_web_servers.md)
+   * [Content Type Negotiation](http/content_type_negotiation.md)
+   * [Compression](http/compression.md)
 

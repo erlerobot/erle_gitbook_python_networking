@@ -100,4 +100,5 @@
 * [Web Applications](web_applications/README.md)
    * [Web Servers and Python](web_applications/web_servers_and_python.md)
    * [Choosing a Web Server](web_applications/choosing_a_web_server.md)
+   * [WSGI](web_applications/wsgi.md)
 

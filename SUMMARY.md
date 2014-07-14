@@ -101,4 +101,7 @@
    * [Web Servers and Python](web_applications/web_servers_and_python.md)
    * [Choosing a Web Server](web_applications/choosing_a_web_server.md)
    * [WSGI](web_applications/wsgi.md)
+   * [WSGI Middleware](web_applications/wsgi_middleware.md)
+   * [Python Web Frameworks](web_applications/python_frameworks.md)
+   * [URL Dispatch Techniques](web_applications/url_dispatch_techniques.md)
 

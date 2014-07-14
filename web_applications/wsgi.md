@@ -117,10 +117,14 @@ This code example should make the calling convention clear enough:
 - For each incoming request, the application is called with an environ object,
 giving it the details of the HTTP request and a live, callable, and named
 `start_response()`.
+
+
 - Once the application has decided what HTTP response code and headers need
 to be returned, it makes a single call to `start_response()`. Its headers will be
 combined with any headers that the WSGI server might already provide to the
 client.
+
+
 - Finally, the application needs only to return the actual content—either a list of
 strings or a generator yielding strings. Either way, the strings will be
 concatenated by the WSGI server to produce the response body that is

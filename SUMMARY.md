@@ -104,4 +104,7 @@
    * [Python Web Frameworks](web_applications/python_frameworks.md)
    * [URL Dispatch Techniques](web_applications/url_dispatch_techniques.md)
    * [Templates](web_applications/templates.md)
+   * [Pure-Python Web Servers](web_applications/pure-python_web_servers.md)
+   * [Common Gateway Interface (CGI)](web_applications/common_gateway_interface_cgi.md)
+   * [mod_python](web_applications/mod_python.md)
 

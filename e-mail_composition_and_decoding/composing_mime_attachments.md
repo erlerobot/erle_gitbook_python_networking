@@ -71,7 +71,7 @@ The result of running this program is shown below :
 ```
 root@erlerobot:~/Python_files# echo "This is a test" > test.txt
 root@erlerobot:~/Python_files# gzip < test.txt > test.txt.gz
-root@erlerobot:~/Python_files# ./mime_gen_basic.py test.txt test.txt.gz
+root@erlerobot:~/Python_files# python mime_gen_basic.py test.txt test.txt.gz
 Content-Type: multipart/mixed; boundary="===============1623374356=="
 MIME-Version: 1.0
 To: recipient@example.com

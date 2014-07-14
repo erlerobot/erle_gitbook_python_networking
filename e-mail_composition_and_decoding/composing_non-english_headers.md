@@ -31,7 +31,7 @@ The code '\xfc' in the Unicode string (strings in Python source files that are p
 contain arbitrary Unicode characters, rather than being restricted to characters whose value is between
 0 and 255).
 ```
-root@erlerobot:~/Python_files#./mime_headers.py
+root@erlerobot:~/Python_files# python mime_headers.py
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit

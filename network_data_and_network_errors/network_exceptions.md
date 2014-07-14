@@ -18,8 +18,12 @@ Traceback (most recent call last):
 gaierror: [Errno -5] No address associated with hostname
 ```
 
+
+
 - socket.error: This is the workhorse of the socket module, and will be raised for
 nearly every failure that can happen at any stage in a network transmission.
+
+
 
 - socket.timeout: This exception is raised only if you, or a library that you are using,
 decides to set a timeout on a socket rather than wait forever for a `send()` or `recv()`

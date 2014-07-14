@@ -92,7 +92,6 @@
 * [Screen Scraping](screen_scraping/README.md)
    * [Fetching Web Pages](screen_scraping/fetching_web_pages.md)
    * [Downloading Pages Through Form Submission](screen_scraping/downloading_pages_through_form_submission.md)
-   * [Downloading Pages Through Form Submission](screen_scraping/downloading_pages_through_form_submission.md)
    * [The Structure of Web Pages](screen_scraping/the_structure_of_web_pages.md)
    * [Three Axes](screen_scraping/three_axes.md)
    * [Diving into an HTML Document](screen_scraping/diving_into_an_html_document.md)
@@ -104,4 +103,5 @@
    * [WSGI Middleware](web_applications/wsgi_middleware.md)
    * [Python Web Frameworks](web_applications/python_frameworks.md)
    * [URL Dispatch Techniques](web_applications/url_dispatch_techniques.md)
+   * [Templates](web_applications/templates.md)
 

@@ -16,6 +16,7 @@ In view of this we are going to detail two situations where the use of TCP is no
 client and server, and especially where there are so many clients that a typical TCP implementation
 would run out of port numbers if it had to keep up with a separate data stream for each active client.
 
+
 - The second situation where TCP is inappropriate is when an application can do something much
 smarter than simply re-transmit data when a packet has been lost. Imagine an audio chat conversation,
 for example: if a second’s worth of data is lost because of a dropped packet, then it will do little good to

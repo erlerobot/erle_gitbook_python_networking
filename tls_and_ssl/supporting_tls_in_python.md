@@ -12,5 +12,7 @@ of the socket in both directions.
 There are two general approaches to using SSL:
 - The most straightforward option is probably to use the [ssl package](https://docs.python.org/2/library/ssl.html?highlight=ssl%20package) that recent versions of Python
 ship with the Standard Library.
+
+
 - The other alternative is to use a third-party Python library. There are several of these that support
 TLS, but many of them are decrepit and seem to have been abandoned. For example M2Crypto package.

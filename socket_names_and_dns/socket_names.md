@@ -15,19 +15,31 @@ name as an argument:
 has incoming connections ready to hand off to the application, it returns a tuple(ordered set of values)
 whose second item is the remote address that has connected (the first item in the
 tuple is the net socket connected to that remote address).
+
+
 - `mysocket.bind(address)`: Assigns the socket the local address so that outgoing
 packets have an address from which to originate, and so that any incoming
 connections from other machines have a name that they can use to connect.
+
+
 - ` mysocket.connect(address)`: Establishes that data sent through this socket will be
 directed to the given remote address. For UDP sockets, this simply sets the default
 address used if the caller uses `send()` rather than `sendto()`; for TCP sockets, this
 actually negotiates a new stream with another machine using a three-way
 handshake, and raises an exception if the negotiation fails.
+
+
 - `mysocket.getpeername()`: Returns the remote address to which this socket is
 connected.
+
+
 - `mysocket.getsockname()`: Returns the address of this socket's own local endpoint.
+
+
 - `mysocket.recvfrom(...)`: For UDP sockets, this returns a tuple that pairs a string
 of returned data with the address from which it was just sent.
+
+
 - `mysocket.sendto(data, address)`: An unconnected UDP port uses this method to
 fire off a data packet at a particular remote address.
 

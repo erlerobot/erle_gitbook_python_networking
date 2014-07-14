@@ -68,10 +68,14 @@ card is immediately free to transmit, or because the system has room to copy the
 data to a temporary outgoing buffer so that your program can continue running.
 In these cases, `send()` returns immediately, and it will return the length of your
 data string because the whole string was transmitted.
+
+
 - Another possibility is that the network card is busy and that the outgoing data
 buffer for this socket is full and the system cannot—or will not—allocate any more
 space. In this case, the default behavior of `send()` is simply to block, pausing your
 program until the data can be accepted.
+
+
 - There is a final, hybrid possibility: that the outgoing buffers are almost full, but not
 quite, and so part of the data you are trying to send can be immediately queued,
 but the rest will have to wait. In this case, `send()` completes immediately and
@@ -86,8 +90,12 @@ part of the data that is on the way from the client. Internally, the operating s
 `recv()` uses logic very close to that used when sending:
 - If no data is available, then `recv()` blocks and your program pauses until data
 arrives.
+
+
 - If plenty of data is available already in the incoming buffer, then you are given as
 many bytes as you asked `recv()` for.
+
+
 - But if the buffer contains a bit of data, but not as much as you are asking for, then
 you are immediately returned what does happen to be there, even if it is not as
 much as you have asked for.

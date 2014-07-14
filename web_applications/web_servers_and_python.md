@@ -24,6 +24,8 @@ identical worker processes:
 
 - The Apache web server can be combined with the popular `mod_wsgi` module to
 host a separate Python interpreter in every Apache worker process.
+
+
 - The web application can be run inside of either the flup server or the uWSGI server.
 Both of these servers will manage a pool of worker processes where each process
 hosts a Python interpreter running your application. The front-end web server can

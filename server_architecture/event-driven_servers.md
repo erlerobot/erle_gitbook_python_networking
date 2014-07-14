@@ -119,6 +119,7 @@ the official notification that the connection is closed.
 - A slightly older mechanism for writing event-driven servers that listen to sockets is to use the `select()
 ` call, which like `poll()` is available from the Python select module in the Standard Library. I recommend to use `poll() because it produces much cleaner code, but many people choose select() because it is supported on Windows.
 
+
 - When talking about event-driven servers, you should take into account the following: **Event-Driven Servers are Blocking and Synchronous**.
 Referring to the event - driven servers, like the one in `server_poll.py`, some people call them “non-blocking,” despite the fact that the `poll()` call blocks(they mean that it does
 not block waiting for any particular client), and others

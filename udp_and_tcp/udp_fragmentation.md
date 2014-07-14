@@ -17,11 +17,13 @@ packets, to make retransmission less likely and to limit how long it takes the
 remote IP stack to reassemble your UDP packet and give it to the waiting
 application.
 
+
 - If the ICMP packets are wrongfully blocked by a firewall that would normally allow
 your host to auto-detect the MTU between you and the remote host, then your
 larger UDP packets might disappear into oblivion without your ever knowing. The
 MTU is the “maximum transmission unit” or “largest packet size” that all of the
 network devices between two hosts will support.
+
 
 - If your protocol can make its own choices about how it splits up data between
 different packets, and you want to be able to auto-adjust this size based on the

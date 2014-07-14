@@ -20,9 +20,13 @@ The differences that IPv6 will make for your Python code might sound quite daunt
 right after the other:
 - Your sockets have to be prepared to have the family AF_INET6 if you are called
 upon to operate on an IPv6 network.
+
+
 - No longer do socket names consist of just two pieces, an address and a port
 number; instead, they can also involve additional coordinates that provide “flow”
 information and a “scope” identifier.
+
+
 - The pretty IPv4 octets like 18.9.22.69 that you might already be reading from
 configuration files or from your command-line arguments will now sometimes be
 replaced by IPv6 host addresses instead, which you might not even have good

@@ -20,6 +20,7 @@ sent by this kind of port; it does not represent any actual network conversation
 Instead, it is how the server alerts the operating system to its willingness to receive
 incoming connections in the first place.
 
+
 - An *active socket* (connected socket), is bound to one particular remote conversation
 partner, who has their own IP address and port number. It can be used only for
 talking back and forth with that partner, and can be read and written to without

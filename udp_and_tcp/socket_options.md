@@ -14,8 +14,12 @@ s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, value)
 
 - SO_BROADCAST: Allows broadcast UDP packets to be sent and received; see the next
 section for details.
+
+
 - SO_DONTROUTE: Only be willing to send packets that are addressed to hosts on
 subnets to which this computer is connected directly.
+
+
 - SO_TYPE: When passed to `getsockopt()`, this returns to you regardless of whether a
 socket is of type `SOCK_DGRAM `and can be used for UDP, or it is of type `SOCK_STREAM`
 and instead supports the semantics of TCP.

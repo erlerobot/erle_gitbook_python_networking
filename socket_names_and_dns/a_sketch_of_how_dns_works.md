@@ -42,20 +42,28 @@ everywhere else on your system—in their browser, in file share names, and so
 forth—suddenly do not work when they use your application, because you are not
 deferring to mechanisms like WINS or /etc/hosts like the operating system itself
 does.
+
+
 - The local machine probably has a cache of recently queried domain names that
 might already know about the host whose IP address you need. If you try speaking
 DNS yourself to answer your query, you will be duplicating work that has already
 been done.
+
+
 - The system on which your Python script is running already knows about the local
 domain nameservers, thanks either to manual intervention by your system
 administrator or a network configuration protocol like DHCP in your office, home,
 or coffee shop. To crank up DNS right inside your Python program, you will have
 to learn how to query your particular operating system for this information—an
 operating-system-specific action that we will not be covering in this book.
+
+
 - If you do not use the local DNS server, then you will not be able to benefit from its
 own cache that would prevent your application and other applications running on
 the same network from repeating requests about a hostname that is in frequent
 use at your location.
+
+
 - From time to time, adjustments are made to the world DNS infrastructure, and
 operating system libraries and daemons are gradually updated to accommodate
 this. If your program makes raw DNS calls of its own, then you will have to follow

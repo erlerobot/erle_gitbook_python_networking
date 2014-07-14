@@ -45,6 +45,8 @@ packets arriving back:
 and then use `recvfrom()` to receive the replies and carefully check the return
 address it gives you against the list of servers to which you have made outstanding
 requests.
+
+
 - You can `connect()` your socket right after creating it, and then simply use `send()`
 and `recv()`, and the operating system will filter out unwanted packets for you. This
 works only for speaking to one server at a time, because running `connect()` a

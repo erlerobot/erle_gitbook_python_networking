@@ -11,5 +11,7 @@ only if your host ever only sends one message at a time, then waits for a respon
 
 There are two good reasons to use UDP:
 - Because you are implementing a protocol that already exists, and it uses UDP.
+
+
 - Because unreliable subnet broadcast is a great pattern for your application, and
 UDP supports it perfectly.

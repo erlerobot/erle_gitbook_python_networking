@@ -3,8 +3,12 @@
 Parsing HTML with Python requires three choices:
 - The parser you will use to digest the HTML, and try to make sense of its tangle of
 opening and closing tags.
+
+
 - The API(Application Programming Interface) by which your Python program will access the tree of concentric elements
-that the parser built from its analysis of the HTML page
+that the parser built from its analysis of the HTML page.
+
+
 - What kinds of selectors you will be able to write to jump directly to the part of the
 page that interests you, instead of having to step into the hierarchy one element at a time.
 

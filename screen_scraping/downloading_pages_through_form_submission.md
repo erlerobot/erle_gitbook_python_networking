@@ -1,5 +1,6 @@
 ## Downloading Pages Through Form Submission
 
+
 The task of grabbing information from a web site usually starts by reading it carefully with a web browser
 and finding a route to the information you need.
 

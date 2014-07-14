@@ -33,11 +33,17 @@ python.org IN NS 'ns.xs4all.nl'
 ```
 The keys that get printed on each line are as follows:
 - The name that we looked up.
+
+
 - The “class,” which in all queries you are likely to see is IN, meaning it is a question
 about Internet addresses.
+
+
 - The “type” of record; some common ones are A for an IPv4 address, AAAA for an
 IPv6 address, NS for a record that lists a nameserver, and MX for a statement about
 what mail server should be used for a domain.
+
+
 - Finally, the “data” provides the information for which the record type was
 essentially a promise: the address, or data, or hostname associated with the name
 that we asked about.

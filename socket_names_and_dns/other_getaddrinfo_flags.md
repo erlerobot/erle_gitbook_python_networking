@@ -14,6 +14,8 @@ existence of this option: if you want to see all of the addresses from your IPv6
 connected host, even though some perfectly good IPv6 addresses are available,
 then combine this AI_ALL flag with AI_V4MAPPED and the list returned to you will
 have every address known for the target host.
+
+
 - AI_NUMERICHOST: This turns off any attempt to interpret the hostname parameter
 (the first parameter to `getaddrinfo()) as a textual hostname like cern.ch, and only
 tries to interpret the hostname string as a literal IPv4 or IPv6 hostname like
@@ -21,6 +23,8 @@ tries to interpret the hostname string as a literal IPv4 or IPv6 hostname like
 round-trip is incurred (see the next section), and prevents possibly untrusted user
 input from forcing your system to issue a query to a nameserver under someone
 else's control.
+
+
 - AI_NUMERICSERV: This turns off symbolic port names like www and insists that port
 numbers like 80 be used instead. This does not necessarily have the networkquery
 implications of the previous option, since port-number databases are

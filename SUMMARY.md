@@ -165,4 +165,12 @@
    * [Handling Errors](file_transfer_protocol_ftp/handling_errors.md)
    * [Detecting Directories and Recursive Download](file_transfer_protocol_ftp/detecting_directories_and_recursive_download.md)
    * [Creating Directories, Deleting Things](file_transfer_protocol_ftp/creating_directories,_deleting_things.md)
+* [Remote Procedure Call (RPC)](remote_procedure_call_rpc/README.md)
+   * [Features of RPC](remote_procedure_call_rpc/features_of_rpc.md)
+   * [XML-RPC](remote_procedure_call_rpc/xml-rpc.md)
+   * [JSON-RPC](remote_procedure_call_rpc/json-rpc.md)
+   * [Self-documenting Data](remote_procedure_call_rpc/self-documenting_data.md)
+   * [Talking About Objects: Pyro and RPyC](remote_procedure_call_rpc/talking_about_objects_pyro_and_rpyc.md)
+   * [An RPyC Example](remote_procedure_call_rpc/an_rpyc_example.md)
+   * [RPC, Web Frameworks, Message Queues](remote_procedure_call_rpc/rpc,_web_frameworks,_message_queues.md)
 

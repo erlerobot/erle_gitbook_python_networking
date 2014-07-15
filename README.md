@@ -5,7 +5,7 @@
 
 ##Book
 
-This book try to teach the reader about **Python networking** in Linux, using [Erle-board](http://erlerobot.com/). **Erle** is **a small-size Linux computer for making drones.**
+This book teaches the reader about **Python networking** in Linux, using [Erle-board](http://erlerobot.com/). **Erle** is **a small-size Linux computer for making drones.**
 
 With Python networking we refer to how ussing this programming language to control the incoming/outcoming connections, to use different protocols such as IP...
 
@@ -30,7 +30,7 @@ Our small-size Linux computer is bringing robotics to the people and businesses.
 ##License
 This book has been based on diferent Linux documentation avaliable on the internet. Refer to the sources for the corresponding licenses:
 
--  [Phyton Documentation](https://docs.python.org/2/contents.html)
+-  [Python Documentation](https://docs.python.org/2/contents.html)
 - [Python Standard Library](https://docs.python.org/2/library/)
 -  [Python Package Index](https://pypi.python.org/pypi/pip)
 

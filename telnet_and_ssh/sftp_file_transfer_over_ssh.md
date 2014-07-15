@@ -67,3 +67,22 @@ for filename in sorted(sftp.listdir()):
 
 client.close()
 ```
+
+Note that, although I made a big deal of talking about how each file that you open with SFTP uses its
+own independent channel, the simple `get()` and `put(`) convenience functions provided by paramiko—
+which are really lightweight wrappers for an `open()` followed by a loop that reads and writes—do not
+attempt any asynchrony, but instead just block and wait until each whole file has arrived. This means that
+the foregoing script calmly transfers one file at a time, producing output that looks something like this:
+```
+root@erlerobot:~/Python_files#  python sftp.py
+Transfer of 'messages.1' is at 32768/128609 bytes (25.5%)
+Transfer of 'messages.1' is at 65536/128609 bytes (51.0%)
+Transfer of 'messages.1' is at 98304/128609 bytes (76.4%)
+Transfer of 'messages.1' is at 128609/128609 bytes (100.0%)
+Transfer of 'messages.2.gz' is at 32768/40225 bytes (81.5%)
+Transfer of 'messages.2.gz' is at 40225/40225 bytes (100.0%)
+Transfer of 'messages.3.gz' is at 28249/28249 bytes (100.0%)
+Transfer of 'messages.4.gz' is at 32768/71703 bytes (45.7%)
+Transfer of 'messages.4.gz' is at 65536/71703 bytes (91.4%)
+Transfer of 'messages.4.gz' is at 71703/71703 bytes (100.0%)
+```

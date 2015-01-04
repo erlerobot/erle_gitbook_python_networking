@@ -7,7 +7,7 @@
 
 This book teaches the reader about **Python networking** in Linux, using [Erle Robotics autopilots](http://erlerobot.com/). **Erle Robotics** creates **small-size Linux computers for making drones.**
 
-With Python networking we refer to how ussing this programming language to control the incoming/outcoming connections, to use different protocols such as IP...
+With Python networking we refer to how ussing this programming language to control the incoming/outcoming connections, to use different protocols such as IP.
 
 
 ![erlelogo](erleimg/erlelogo.png)
